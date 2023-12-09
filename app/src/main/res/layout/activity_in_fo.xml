@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".Ui.InFoActivity">
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+        <ImageView
+            android:id="@+id/profile_picture"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/enterdata" />
+
+        <TextView
+            android:id="@+id/personal_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:padding="10dp"
+            android:text="personal info"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profile_picture" />
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/numOfRecordId"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/personal_header">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" ID"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/namefield"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/numOfRecordId"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/emailfield"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/namefield">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Absent count"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/phonefeild"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/addressfeild"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" phone"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/company_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+
+            android:padding="10dp"
+            android:text="Company info"
+            android:textSize="25dp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/phonefeild" />
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/company"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/company_header"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/company_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" company name"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/branch"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/company">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/branch_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" branch"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:id="@+id/addressfeild"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="32dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailfield"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/employee_address_text_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint=" Count of violations"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                />
+        </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/degree"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/branch">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/employee_degree_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" degree"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/hiredate"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/expdate"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/employee_hire_date_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" employee hire date"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/expdate"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/degree" >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/employee_year_exp_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" employee year exp"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+
+                    android:id="@+id/salary"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="32dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/hiredate">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/employee_salary_text_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" salary"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        />
+                </com.google.android.material.textfield.TextInputLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.core.widget.NestedScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
